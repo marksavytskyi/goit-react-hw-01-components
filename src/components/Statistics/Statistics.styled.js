@@ -23,7 +23,6 @@ const setBg = () => {
 
 export const StatList = styled.ul`
   display: flex;
-  flex-wrap: wrap;
 `;
 
 export const Item = styled.li`
@@ -36,7 +35,7 @@ export const Item = styled.li`
   background-color: ${setBg};
 
   padding: 20px;
-  width: calc(100% / 3);
+  width: calc(100% / ${props => props.Length});
 `;
 
 export const Percentage = styled.span`

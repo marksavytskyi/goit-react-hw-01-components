@@ -16,9 +16,9 @@ function Statistics({ title = '', stat }) {
       <StatList>
         {stat.map(({ id, label, percentage }) => {
           return (
-            <Item key={id} className="item">
-              <span className="label">{label} </span>
-              <Percentage className="percentage">{percentage}%</Percentage>
+            <Item key={id} Length={stat.length}>
+              <span>{label} </span>
+              <Percentage>{percentage}%</Percentage>
             </Item>
           );
         })}
