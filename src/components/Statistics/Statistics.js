@@ -11,7 +11,7 @@ import {
 function Statistics({ title = '', stat }) {
   return (
     <Section>
-      {title.length > 1 && <Title>{title}</Title>}
+      {title && <Title>{title}</Title>}
 
       <StatList>
         {stat.map(({ id, label, percentage }) => {
